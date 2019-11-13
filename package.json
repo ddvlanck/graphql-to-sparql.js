@@ -72,7 +72,7 @@
     "test-watch": "jest ${1} --watch",
     "coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls",
     "lint": "tslint index.ts lib/**/*.ts test/**/*.ts --exclude '**/*.d.ts'",
-    "build": "tsc",
+    "build": "tsc | webpack",
     "build-watch": "tsc --watch",
     "validate": "npm ls",
     "prepare": "npm run build",
@@ -84,6 +84,8 @@
     "graphql": "^14.5.8",
     "jsonld-context-parser": "^1.2.0",
     "minimist": "^1.2.0",
-    "sparqlalgebrajs": "^2.0.0"
+    "sparqlalgebrajs": "^2.0.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
   }
 }

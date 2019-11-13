@@ -1,0 +1,1 @@
+window.graphql_to_sparql = require('./index.ts');
